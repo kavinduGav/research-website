@@ -95,6 +95,15 @@ a:hover { color: var(--accent-light); }
 /* Dropdown */
 .nav-dropdown {
   position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.nav-dropdown > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-dropdown > a::after {
@@ -105,7 +114,7 @@ a:hover { color: var(--accent-light); }
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   background: var(--navy-mid);
   border-radius: var(--radius);
