@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Project | Milestones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">Research<span>.</span>24</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="domain.html">Domain</a></li>
+        <li class="nav-dropdown">
+          <a href="milestones.html" class="active">Milestones</a>
+          <ul class="dropdown-menu">
+            <li><a href="milestones.html?m=proposal">Project Proposal</a></li>
+            <li><a href="milestones.html?m=pp1">Progress Presentation 1</a></li>
+            <li><a href="milestones.html?m=pp2">Progress Presentation 2</a></li>
+            <li><a href="milestones.html?m=final">Final Assessment</a></li>
+            <li><a href="milestones.html?m=viva">Viva</a></li>
+          </ul>
+        </li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Milestones</h1>
+    <p>Track all project assessments, dates, and marks allocated.</p>
+  </div>
+
+  <div class="section">
+
+    <!-- Dropdown selector -->
+    <div class="milestone-selector">
+      <label for="milestoneSelect">Select Milestone:</label>
+      <select id="milestoneSelect">
+        <option value="proposal">Project Proposal</option>
+        <option value="pp1">Progress Presentation 1</option>
+        <option value="pp2">Progress Presentation 2</option>
+        <option value="final">Final Assessment</option>
+        <option value="viva">Viva</option>
+      </select>
+    </div>
+
+    <!-- ===== PROJECT PROPOSAL ===== -->
+    <div class="milestone-detail card active" id="m-proposal">
+      <div class="milestone-header">
+        <div>
+          <h2 style="color:var(--navy); margin-bottom:0.5rem;">Project Proposal</h2>
+          <div class="milestone-meta">
+            <span class="badge badge-blue">Assessment 1</span>
+            <span class="badge badge-green">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="milestone-info-grid">
+        <div class="info-box">
+          <div class="label">Submission Date</div>
+          <!-- TODO: Replace with actual date -->
+          <div class="value">DD Month YYYY</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Marks Allocated</div>
+          <!-- TODO: Replace with actual marks -->
+          <div class="value">XX%</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Deliverable</div>
+          <div class="value">Proposal Document</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Status</div>
+          <div class="value" style="color:#065f46;">Completed</div>
+        </div>
+      </div>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
+      <!-- TODO: Replace with actual proposal description -->
+      <p style="margin-bottom:1rem;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The project proposal outlines the research problem, objectives, methodology, and expected outcomes.
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+      </p>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
+      <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
+        <!-- TODO: Replace with actual criteria -->
+        <li>Clarity and relevance of the research problem</li>
+        <li>Feasibility of the proposed methodology</li>
+        <li>Quality and depth of literature review</li>
+        <li>Realistic timeline and resource planning</li>
+      </ul>
+
+      <div style="margin-top:1.5rem;">
+        <a href="documents.html" class="btn btn-outline">View Proposal Document</a>
+      </div>
+    </div>
+
+    <!-- ===== PROGRESS PRESENTATION 1 ===== -->
+    <div class="milestone-detail card" id="m-pp1">
+      <div class="milestone-header">
+        <div>
+          <h2 style="color:var(--navy); margin-bottom:0.5rem;">Progress Presentation 1</h2>
+          <div class="milestone-meta">
+            <span class="badge badge-blue">Assessment 2</span>
+            <span class="badge badge-green">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="milestone-info-grid">
+        <div class="info-box">
+          <div class="label">Presentation Date</div>
+          <div class="value">DD Month YYYY</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Marks Allocated</div>
+          <div class="value">XX%</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Deliverable</div>
+          <div class="value">Slides + Demo</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Status</div>
+          <div class="value" style="color:#065f46;">Completed</div>
+        </div>
+      </div>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
+      <p style="margin-bottom:1rem;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. The first progress presentation demonstrates the initial implementation and early findings of the research, including a working prototype or proof of concept.
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </p>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
+      <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
+        <li>Progress against the original proposal timeline</li>
+        <li>Quality of initial implementation or prototype</li>
+        <li>Presentation clarity and delivery</li>
+        <li>Ability to respond to panel questions</li>
+      </ul>
+
+      <div style="margin-top:1.5rem;">
+        <a href="presentations.html" class="btn btn-outline">View Slides</a>
+      </div>
+    </div>
+
+    <!-- ===== PROGRESS PRESENTATION 2 ===== -->
+    <div class="milestone-detail card" id="m-pp2">
+      <div class="milestone-header">
+        <div>
+          <h2 style="color:var(--navy); margin-bottom:0.5rem;">Progress Presentation 2</h2>
+          <div class="milestone-meta">
+            <span class="badge badge-blue">Assessment 3</span>
+            <span class="badge badge-amber">Upcoming</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="milestone-info-grid">
+        <div class="info-box">
+          <div class="label">Presentation Date</div>
+          <div class="value">DD Month YYYY</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Marks Allocated</div>
+          <div class="value">XX%</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Deliverable</div>
+          <div class="value">Slides + System Demo</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Status</div>
+          <div class="value" style="color:#92400e;">Upcoming</div>
+        </div>
+      </div>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
+      <p style="margin-bottom:1rem;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Progress Presentation 2 showcases a significantly more complete system, addressing feedback from PP1 and demonstrating key functionality of the research solution.
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nulla pariatur.
+      </p>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
+      <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
+        <li>Completeness of the system relative to the final goal</li>
+        <li>Quality of evaluation and results so far</li>
+        <li>Response to PP1 panel feedback</li>
+        <li>Presentation quality and technical depth</li>
+      </ul>
+    </div>
+
+    <!-- ===== FINAL ASSESSMENT ===== -->
+    <div class="milestone-detail card" id="m-final">
+      <div class="milestone-header">
+        <div>
+          <h2 style="color:var(--navy); margin-bottom:0.5rem;">Final Assessment</h2>
+          <div class="milestone-meta">
+            <span class="badge badge-blue">Assessment 4</span>
+            <span class="badge badge-amber">Upcoming</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="milestone-info-grid">
+        <div class="info-box">
+          <div class="label">Submission Date</div>
+          <div class="value">DD Month YYYY</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Marks Allocated</div>
+          <div class="value">XX%</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Deliverable</div>
+          <div class="value">Final Report + System</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Status</div>
+          <div class="value" style="color:#92400e;">Upcoming</div>
+        </div>
+      </div>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
+      <p style="margin-bottom:1rem;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. The final assessment is the culmination of the research project — a complete system submission along with the final research report covering all components, results, and conclusions.
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa officia.
+      </p>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
+      <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
+        <li>Completeness and quality of the final system</li>
+        <li>Research report quality and academic rigor</li>
+        <li>Achievement of stated research objectives</li>
+        <li>Validity of results and analysis</li>
+      </ul>
+
+      <div style="margin-top:1.5rem;">
+        <a href="documents.html" class="btn btn-outline">View Documents</a>
+      </div>
+    </div>
+
+    <!-- ===== VIVA ===== -->
+    <div class="milestone-detail card" id="m-viva">
+      <div class="milestone-header">
+        <div>
+          <h2 style="color:var(--navy); margin-bottom:0.5rem;">Viva</h2>
+          <div class="milestone-meta">
+            <span class="badge badge-blue">Assessment 5</span>
+            <span class="badge badge-amber">Upcoming</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="milestone-info-grid">
+        <div class="info-box">
+          <div class="label">Viva Date</div>
+          <div class="value">DD Month YYYY</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Marks Allocated</div>
+          <div class="value">XX%</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Format</div>
+          <div class="value">Oral Defence</div>
+        </div>
+        <div class="info-box">
+          <div class="label">Status</div>
+          <div class="value" style="color:#92400e;">Upcoming</div>
+        </div>
+      </div>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
+      <p style="margin-bottom:1rem;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. The viva is an oral examination where each group member is assessed individually on their understanding, contribution, and ability to defend the research.
+      </p>
+      <p style="margin-bottom:1.5rem;">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.
+      </p>
+
+      <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
+      <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
+        <li>Individual understanding of the research topic</li>
+        <li>Ability to defend design and implementation decisions</li>
+        <li>Clarity of answers to panel questions</li>
+        <li>Demonstrated individual contribution to the project</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Group [XX] &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2024/25</p>
+    <p style="margin-top:0.4rem;"><a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <script>
+    const select   = document.getElementById('milestoneSelect');
+    const details  = document.querySelectorAll('.milestone-detail');
+
+    function showMilestone(id) {
+      details.forEach(d => d.classList.remove('active'));
+      const target = document.getElementById('m-' + id);
+      if (target) target.classList.add('active');
+      select.value = id;
+    }
+
+    // Read ?m= query param on load
+    const params = new URLSearchParams(window.location.search);
+    const initial = params.get('m') || 'proposal';
+    showMilestone(initial);
+
+    select.addEventListener('change', () => showMilestone(select.value));
+
+    // Mobile nav
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-dropdown > a').forEach(link => {
+      link.addEventListener('click', e => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          link.closest('.nav-dropdown').classList.toggle('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
