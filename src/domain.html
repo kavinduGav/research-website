@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research Project | Domain</title>
+  <title>SnoutScan | Domain</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <a class="nav-logo" href="index.html">Research<span>.</span>24</a>
+      <a class="nav-logo" href="index.html"><img src="assets/icon.png" alt="SnoutScan" style="height:28px; vertical-align:middle; margin-right:0.4rem;" />Snout<span>Scan</span></a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -55,206 +55,393 @@
       <button class="tab-btn" data-tab="technologies">Technologies</button>
     </div>
 
-    <!-- Literature Survey -->
+    <!-- ===== LITERATURE SURVEY ===== -->
     <div class="tab-panel active" id="tab-literature">
       <div class="domain-card">
         <h3>Literature Survey</h3>
-        <!-- TODO: Replace with your literature survey findings -->
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          As dogs increasingly take on the role of family members in households globally, the consequences of pet
+          misidentification, abandonment, and delayed recovery remain persistent and deeply concerning. Traditional
+          identification methods — tags, collars, and microchips — are vulnerable to damage, loss, tampering, or
+          require invasive procedures and specialised readers. These shortcomings are most severe in low-resource or
+          high-mobility environments where conventional systems fail to provide timely or accurate identification.
         </p>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p style="margin-top:1rem;">
+          Biometric identification using a dog's nose print has emerged as a viable and promising alternative. Similar
+          to human fingerprints, canine nose prints are unique and consistent over a dog's lifetime, making them ideal
+          for secure, non-invasive identification. Early adoption was hindered by poor image quality, limited annotated
+          datasets, and variability in capture conditions. Recent deep learning advances have substantially overcome
+          these barriers, opening the door to smartphone-accessible, highly accurate nose-print recognition.
         </p>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione sequi.
+        <p style="margin-top:1rem;">
+          Beyond identification, a holistic review of the literature reveals critical unmet needs in pet welfare: no
+          existing system bridges biometric identity with GPS-based lost-pet recovery, AI-guided ethical breeding, or
+          community-driven cruelty detection. The survey below maps the key prior works this research builds upon
+          and extends.
         </p>
 
-        <!-- Sub-papers or works reviewed -->
-        <h3 style="margin-top:1.5rem;">Related Works</h3>
+        <h3 style="margin-top:1.75rem; margin-bottom:1rem;">Related Works</h3>
         <div class="card-grid card-grid-2" style="margin-top:1rem;">
+
           <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
-            <!-- TODO: Replace with actual paper title, authors, year -->
-            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"Lorem Ipsum Study on Topic A"</p>
-            <p style="font-size:0.82rem; color:var(--text-muted);">Author A, Author B &mdash; 2022</p>
-            <p style="font-size:0.875rem; margin-top:0.5rem;">Brief summary of findings and how they relate to your work.</p>
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"A Competitive Method for Dog Nose-print Re-identification"</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">Shen et al. &mdash; CVPR Biometrics Workshop, 2022</p>
+            <p style="font-size:0.875rem; margin-top:0.5rem;">
+              Proposed data augmentation, ensemble modelling, and hybrid loss functions for nose-print re-ID,
+              achieving <strong>86.7% AUC</strong> on a challenging benchmark dataset. Established that deep
+              learning can overcome capture-condition variability at scale.
+            </p>
           </div>
+
           <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
-            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"Dolor Sit Amet Research on Topic B"</p>
-            <p style="font-size:0.82rem; color:var(--text-muted);">Author C, Author D &mdash; 2023</p>
-            <p style="font-size:0.875rem; margin-top:0.5rem;">Brief summary of findings and how they relate to your work.</p>
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"Dog Nose Print Matching with Dual Global Descriptor Based on Contrastive Learning"</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">Li, Wang, Wu, Shi &amp; Ma &mdash; CVPR Biometrics Workshop, 2022</p>
+            <p style="font-size:0.875rem; margin-top:0.5rem;">
+              Introduced a dual global descriptor framework trained with supervised contrastive learning that
+              enhances feature discrimination even under low resolution or motion blur — directly relevant to
+              real-world smartphone capture scenarios.
+            </p>
           </div>
+
           <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
-            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"Adipiscing Elit Analysis of Topic C"</p>
-            <p style="font-size:0.82rem; color:var(--text-muted);">Author E &mdash; 2023</p>
-            <p style="font-size:0.875rem; margin-top:0.5rem;">Brief summary of findings and how they relate to your work.</p>
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"DNNet: Dog Nose Print Pattern-Based Identification Using Deep Neural Networks"</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">Han, Park &amp; Kim &mdash; IEEE Int. Conf. on Humanoid and Intelligent Systems, 2021</p>
+            <p style="font-size:0.875rem; margin-top:0.5rem;">
+              Demonstrated that CNN-based pattern extraction from nasal ridge, crease, and valley structures
+              can achieve high identification accuracy, validating nose prints as a biometric modality
+              comparable to human fingerprints.
+            </p>
           </div>
+
           <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
-            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"Consectetur Survey of Topic D"</p>
-            <p style="font-size:0.82rem; color:var(--text-muted);">Author F, Author G &mdash; 2024</p>
-            <p style="font-size:0.875rem; margin-top:0.5rem;">Brief summary of findings and how they relate to your work.</p>
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">"Development of a Mobile Application for Searching Lost Pets Using Geographical Location and Image Recognition"</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">Ortiz Mora, Salcedo Parra &amp; Espitia R. &mdash; Int. Journal of Applied Engineering Research, 2018</p>
+            <p style="font-size:0.875rem; margin-top:0.5rem;">
+              Demonstrated how GPS coordinates and image recognition could be combined to improve lost-pet
+              localisation in urban settings. The system remained limited in biometric precision and scalability,
+              highlighting the gap this research fills.
+            </p>
           </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Petnow &amp; NOSEiD — Commercial Nose-print Applications</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">Commercial Products &mdash; 2020&ndash;present</p>
+            <p style="font-size:0.875rem; margin-top:0.5rem;">
+              Both apps enable nose-print capture via smartphone for pet registration and recovery. However, they
+              operate in isolation — neither integrates breeding guidance, cruelty reporting, nor a welfare
+              authority alerting pipeline, confirming the need for a unified platform.
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">AI-Based Animal Cruelty Detection Using Object Detection Models</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">Prior Works in Visual Cruelty &amp; Welfare AI &mdash; 2020&ndash;2024</p>
+            <p style="font-size:0.875rem; margin-top:0.5rem;">
+              Emerging research applies YOLO and Faster R-CNN architectures to detect visible signs of animal
+              abuse and neglect in images. No prior work, however, links detected cruelty evidence directly to
+              a biometrically verified dog identity for traceability and repeat-offender tracking.
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <!-- Research Gap -->
+    <!-- ===== RESEARCH GAP ===== -->
     <div class="tab-panel" id="tab-gap">
       <div class="domain-card">
         <h3>Research Gap</h3>
-        <!-- TODO: Describe the gap your research addresses -->
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Despite significant advances in the field, current literature lacks a comprehensive solution that addresses the specific challenges of [your context]. Existing approaches suffer from:
+          Despite significant advances in canine biometric identification and individual welfare tools, the literature
+          reveals four critical gaps that this research addresses:
         </p>
-        <ul style="margin:1rem 0 1rem 1.5rem; display:flex; flex-direction:column; gap:0.5rem;">
-          <!-- TODO: List the specific gaps you identified -->
-          <li>Limitation one — Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</li>
-          <li>Limitation two — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-          <li>Limitation three — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
-          <li>Limitation four — Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</li>
-        </ul>
-        <p>
-          This research aims to bridge these gaps by proposing a novel approach that lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+
+        <div style="display:flex; flex-direction:column; gap:1rem; margin-top:1.25rem;">
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
+            <p style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">1. Narrow Identification Scope</p>
+            <p style="font-size:0.9rem;">
+              Existing systems — Petnow, NOSEiD, and academic models by Shen et al. and Li et al. — focus solely on
+              nose-print matching for identity verification. None extend this into a comprehensive welfare management
+              lifecycle covering registration, recovery, breeding, and cruelty reporting.
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
+            <p style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">2. No Ethical Breeding Integration</p>
+            <p style="font-size:0.9rem;">
+              No current biometric or pet identification system integrates AI-driven breeding recommendations that
+              analyse genetic diversity, health screenings, and hereditary risk. Breeding decisions remain manual,
+              subjective, and disconnected from a dog's verified biometric profile.
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
+            <p style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">3. Lack of Multi-Modal Biometric Recovery</p>
+            <p style="font-size:0.9rem;">
+              Existing pet identification systems rely on single-modal methods. There is limited support for
+              geolocation-based recovery workflows and no secure, privacy-focused communication channel for when
+              owner matching fails, leaving finders and shelters without a cohesive reunification path.
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; border-left:4px solid var(--accent);">
+            <p style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">4. Absence of Integrated Cruelty Detection</p>
+            <p style="font-size:0.9rem;">
+              No existing solution links community-submitted visual evidence to identified dog profiles for cruelty
+              tracking. There is no automated system that uses deep learning to classify abuse and neglect and dispatch
+              alerts to welfare authorities based on a verified biometric identity.
+            </p>
+          </div>
+
+        </div>
       </div>
     </div>
 
-    <!-- Research Problem -->
+    <!-- ===== RESEARCH PROBLEM ===== -->
     <div class="tab-panel" id="tab-problem">
       <div class="domain-card">
         <h3>Research Problem</h3>
-        <!-- TODO: State your research problem clearly -->
         <div style="background:var(--off-white); border-radius:8px; padding:1.5rem; border-left:4px solid var(--gold); margin-bottom:1.5rem;">
           <p style="font-weight:600; font-size:1.05rem; color:var(--navy); font-style:italic;">
-            "How can [your approach] be used to effectively [solve the problem] in [your specific context]?"
+            "How can a non-invasive, AI-powered biometric system using dog nose prints be designed to provide accurate
+            identification while integrating lost pet recovery, ethical breeding guidance, and community cruelty
+            detection into a unified, privacy-preserving, and scalable welfare platform?"
           </p>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The core challenge lies in the fact that existing systems fail to account for [specific factor].
+          Traditional pet identification methods — tags, collars, and microchips — are vulnerable to damage, loss,
+          tampering, or require invasive procedures and specialised readers. These shortcomings are most severe in
+          low-resource or high-mobility environments. While deep learning-based nose-print systems have demonstrated
+          promising accuracy, no system integrates biometric identification with GPS-based recovery workflows,
+          ethical breeding recommendations, and AI-powered cruelty detection in a single, smartphone-accessible,
+          privacy-compliant platform.
         </p>
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. This problem is significant because duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+        <p style="margin-top:1rem;">
+          This gap leaves pet owners, shelters, breeders, and welfare authorities without a cohesive, scalable tool
+          for modern canine care. SnoutScan addresses this by proposing a unified platform that links a dog's
+          biometric identity to every stage of its welfare lifecycle — from registration and recovery, to responsible
+          breeding and community-driven cruelty intervention.
         </p>
       </div>
     </div>
 
-    <!-- Research Objectives -->
+    <!-- ===== RESEARCH OBJECTIVES ===== -->
     <div class="tab-panel" id="tab-objectives">
       <div class="domain-card">
         <h3>Research Objectives</h3>
-        <!-- TODO: Replace with your actual objectives -->
-        <p style="margin-bottom:1.5rem;">The following objectives guide this research:</p>
+
+        <div style="background:var(--off-white); border-radius:8px; padding:1.25rem; margin-bottom:1.5rem; border-left:4px solid var(--gold);">
+          <p style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">Main Objective</p>
+          <p style="font-size:0.9rem;">
+            Develop and evaluate an AI-powered platform for dog identification, recovery, and welfare monitoring
+            using non-invasive biometric techniques — specifically nose-print recognition via smartphone — as a
+            scalable, privacy-preserving, and animal-friendly alternative to traditional methods.
+          </p>
+        </div>
+
+        <p style="margin-bottom:1.25rem; font-weight:600; color:var(--navy);">Specific Objectives</p>
         <div style="display:flex; flex-direction:column; gap:1rem;">
+
           <div style="display:flex; gap:1rem; align-items:flex-start; background:var(--off-white); border-radius:8px; padding:1.25rem;">
-            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem;">1</div>
+            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem; flex-shrink:0;">1</div>
             <div>
-              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Objective One</p>
-              <p style="font-size:0.9rem; color:var(--text-muted);">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Nose-Print Biometric Identification</p>
+              <p style="font-size:0.9rem; color:var(--text-muted);">
+                Implement a smartphone-based nose-print capture and recognition pipeline using CNNs and
+                contrastive learning to generate tamper-proof biometric signatures linked to secure digital
+                dog profiles — targeting 98–99% verification accuracy.
+              </p>
             </div>
           </div>
+
           <div style="display:flex; gap:1rem; align-items:flex-start; background:var(--off-white); border-radius:8px; padding:1.25rem;">
-            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem;">2</div>
+            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem; flex-shrink:0;">2</div>
             <div>
-              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Objective Two</p>
-              <p style="font-size:0.9rem; color:var(--text-muted);">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Lost &amp; Found Recovery System</p>
+              <p style="font-size:0.9rem; color:var(--text-muted);">
+                Develop a hybrid recovery workflow combining multi-modal image matching (face, profile, nose
+                print) with GPS-based geolocation alerts to nearby users, shelters, and vets, and a secure
+                in-app communication channel for verified identity coordination.
+              </p>
             </div>
           </div>
+
           <div style="display:flex; gap:1rem; align-items:flex-start; background:var(--off-white); border-radius:8px; padding:1.25rem;">
-            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem;">3</div>
+            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem; flex-shrink:0;">3</div>
             <div>
-              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Objective Three</p>
-              <p style="font-size:0.9rem; color:var(--text-muted);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">AI-Based Breeding Recommendation Engine</p>
+              <p style="font-size:0.9rem; color:var(--text-muted);">
+                Build an AI-driven recommendation system that analyses genetic diversity, health screenings,
+                breed compatibility, and breeding history to rank ethical pairing candidates, flag inbreeding
+                risks, and simulate offspring health outcomes for responsible breeders.
+              </p>
             </div>
           </div>
+
           <div style="display:flex; gap:1rem; align-items:flex-start; background:var(--off-white); border-radius:8px; padding:1.25rem;">
-            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem;">4</div>
+            <div style="min-width:36px; height:36px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:0.9rem; flex-shrink:0;">4</div>
             <div>
-              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Objective Four</p>
-              <p style="font-size:0.9rem; color:var(--text-muted);">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+              <p style="font-weight:600; color:var(--navy); margin-bottom:0.25rem;">Community Cruelty Detection System</p>
+              <p style="font-size:0.9rem; color:var(--text-muted);">
+                Design an object-detection-based cruelty classification module that autonomously analyses
+                community-submitted images to identify abuse and neglect indicators, links findings to biometrically
+                verified dog profiles for cross-case traceability, and dispatches location-based alerts to
+                welfare authorities.
+              </p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
 
-    <!-- Methodology -->
+    <!-- ===== METHODOLOGY ===== -->
     <div class="tab-panel" id="tab-methodology">
       <div class="domain-card">
         <h3>Methodology</h3>
-        <!-- TODO: Describe your research methodology and system architecture -->
         <p style="margin-bottom:1.5rem;">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. The research follows a [quantitative/qualitative/mixed] methodology structured in the following phases:
+          The research follows an iterative, agile-aligned methodology structured across five phases, combining
+          software engineering best practices with AI/ML model development and rigorous evaluation.
         </p>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:1rem; margin-bottom:1.5rem;">
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:1rem; margin-bottom:1.75rem;">
           <div style="text-align:center; background:var(--off-white); border-radius:10px; padding:1.5rem;">
             <div style="font-size:1.75rem; margin-bottom:0.5rem;">📋</div>
             <p style="font-weight:700; color:var(--navy); font-size:0.9rem;">Phase 1</p>
-            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Requirements &amp; Data Collection</p>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Requirements Analysis &amp; Survey</p>
           </div>
           <div style="text-align:center; background:var(--off-white); border-radius:10px; padding:1.5rem;">
-            <div style="font-size:1.75rem; margin-bottom:0.5rem;">🔧</div>
+            <div style="font-size:1.75rem; margin-bottom:0.5rem;">🏗️</div>
             <p style="font-weight:700; color:var(--navy); font-size:0.9rem;">Phase 2</p>
-            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">System Design &amp; Development</p>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">System Architecture &amp; UI/UX Design</p>
+          </div>
+          <div style="text-align:center; background:var(--off-white); border-radius:10px; padding:1.5rem;">
+            <div style="font-size:1.75rem; margin-bottom:0.5rem;">🔌</div>
+            <p style="font-weight:700; color:var(--navy); font-size:0.9rem;">Phase 3</p>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Integration &amp; API Development</p>
           </div>
           <div style="text-align:center; background:var(--off-white); border-radius:10px; padding:1.5rem;">
             <div style="font-size:1.75rem; margin-bottom:0.5rem;">🧪</div>
-            <p style="font-weight:700; color:var(--navy); font-size:0.9rem;">Phase 3</p>
+            <p style="font-weight:700; color:var(--navy); font-size:0.9rem;">Phase 4</p>
             <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Testing &amp; Evaluation</p>
           </div>
           <div style="text-align:center; background:var(--off-white); border-radius:10px; padding:1.5rem;">
-            <div style="font-size:1.75rem; margin-bottom:0.5rem;">📊</div>
-            <p style="font-weight:700; color:var(--navy); font-size:0.9rem;">Phase 4</p>
-            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Analysis &amp; Conclusion</p>
+            <div style="font-size:1.75rem; margin-bottom:0.5rem;">🚀</div>
+            <p style="font-weight:700; color:var(--navy); font-size:0.9rem;">Phase 5</p>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Deployment</p>
           </div>
         </div>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+
+        <div style="display:flex; flex-direction:column; gap:0.75rem; font-size:0.9rem;">
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.1rem 1.25rem;">
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.35rem;">Phase 1 — Requirements Analysis</p>
+            <p style="color:var(--text-muted);">
+              Problem definition, target user identification (pet owners, shelters, breeders, welfare authorities),
+              functional and non-functional requirement elicitation, and user survey design &amp; data collection.
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.1rem 1.25rem;">
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.35rem;">Phase 2 — System Architecture &amp; Design</p>
+            <p style="color:var(--text-muted);">
+              Overall system architecture design, UI/UX wireframes and navigation flows for the Flutter mobile app
+              and React back-office, technology stack selection, and AI/ML model architecture planning (CNNs,
+              transformer-based architectures, contrastive learning, object detection).
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.1rem 1.25rem;">
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.35rem;">Phase 3 — Integration &amp; Development</p>
+            <p style="color:var(--text-muted);">
+              RESTful API development, PostgreSQL database integration, mobile-to-backend integration, ML model
+              training pipelines using Python/FastAPI, and geolocation &amp; alert service integration.
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.1rem 1.25rem;">
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.35rem;">Phase 4 — Testing &amp; Evaluation</p>
+            <p style="color:var(--text-muted);">
+              Unit testing (frontend, backend, ML models), integration testing, model evaluation using MAE, Accuracy,
+              and R&sup2; metrics, usability testing with target users, stress testing, and error-handling validation.
+            </p>
+          </div>
+
+          <div style="background:var(--off-white); border-radius:8px; padding:1.1rem 1.25rem;">
+            <p style="font-weight:600; color:var(--navy); margin-bottom:0.35rem;">Phase 5 — Deployment</p>
+            <p style="color:var(--text-muted);">
+              Mobile app deployment to app stores, backend and ML model serving deployment via FastAPI and Node.js,
+              PostgreSQL cloud database hosting, and CI/CD pipeline configuration.
+            </p>
+          </div>
+
+        </div>
       </div>
     </div>
 
-    <!-- Technologies Used -->
+    <!-- ===== TECHNOLOGIES ===== -->
     <div class="tab-panel" id="tab-technologies">
       <div class="domain-card">
         <h3>Technologies Used</h3>
-        <!-- TODO: List your actual tech stack -->
-        <p style="margin-bottom:1.5rem;">The following technologies and tools are employed in this research project:</p>
+        <p style="margin-bottom:1.5rem;">The following technologies and tools are employed across this research project:</p>
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:1.5rem;">
+
           <div>
-            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Frontend</p>
+            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Mobile Application</p>
             <div class="tech-grid">
-              <!-- TODO: Replace with your actual frontend stack -->
-              <span class="tech-pill">React.js</span>
-              <span class="tech-pill">TypeScript</span>
-              <span class="tech-pill">Tailwind CSS</span>
+              <span class="tech-pill">Flutter</span>
+              <span class="tech-pill">Dart</span>
             </div>
           </div>
+
+          <div>
+            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Back Office Frontend</p>
+            <div class="tech-grid">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">TypeScript</span>
+            </div>
+          </div>
+
           <div>
             <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Backend</p>
             <div class="tech-grid">
-              <!-- TODO: Replace with your actual backend stack -->
               <span class="tech-pill">Node.js</span>
-              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">TypeScript</span>
               <span class="tech-pill">FastAPI</span>
             </div>
           </div>
+
           <div>
-            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Machine Learning</p>
+            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">AI / ML / Deep Learning</p>
             <div class="tech-grid">
+              <span class="tech-pill">Python</span>
               <span class="tech-pill">TensorFlow</span>
               <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">OpenCV</span>
               <span class="tech-pill">scikit-learn</span>
+              <span class="tech-pill">YOLOv8</span>
             </div>
           </div>
+
           <div>
-            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Database &amp; Cloud</p>
+            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Database</p>
             <div class="tech-grid">
-              <span class="tech-pill">MongoDB</span>
-              <span class="tech-pill">AWS</span>
-              <span class="tech-pill">Firebase</span>
+              <span class="tech-pill">PostgreSQL</span>
             </div>
           </div>
+
+          <div>
+            <p style="font-weight:700; color:var(--navy); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">APIs &amp; Services</p>
+            <div class="tech-grid">
+              <span class="tech-pill">RESTful API</span>
+              <span class="tech-pill">Geolocation API</span>
+              <span class="tech-pill">Push Notifications</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -262,12 +449,11 @@
   </div>
 
   <footer>
-    <p>Group [XX] &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2024/25</p>
+    <p>Group 25-26J-459 &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2025/26</p>
     <p style="margin-top:0.4rem;"><a href="contact.html">Contact Us</a></p>
   </footer>
 
   <script>
-    // Tab switching
     const tabBtns   = document.querySelectorAll('.tab-btn');
     const tabPanels = document.querySelectorAll('.tab-panel');
 
@@ -275,13 +461,11 @@
       btn.addEventListener('click', () => {
         tabBtns.forEach(b => b.classList.remove('active'));
         tabPanels.forEach(p => p.classList.remove('active'));
-
         btn.classList.add('active');
         document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
       });
     });
 
-    // Mobile nav
     document.getElementById('hamburger').addEventListener('click', () => {
       document.getElementById('navLinks').classList.toggle('open');
     });

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research Project | Milestones</title>
+  <title>SnoutScan | Milestones</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <a class="nav-logo" href="index.html">Research<span>.</span>24</a>
+      <a class="nav-logo" href="index.html"><img src="assets/icon.png" alt="SnoutScan" style="height:28px; vertical-align:middle; margin-right:0.4rem;" />Snout<span>Scan</span></a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -72,17 +72,16 @@
       <div class="milestone-info-grid">
         <div class="info-box">
           <div class="label">Submission Date</div>
-          <!-- TODO: Replace with actual date -->
-          <div class="value">DD Month YYYY</div>
+          <div class="value">09 September 2025</div>
         </div>
         <div class="info-box">
           <div class="label">Marks Allocated</div>
-          <!-- TODO: Replace with actual marks -->
-          <div class="value">XX%</div>
+          <div class="value">12%</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:0.2rem;">Presentation 6% + Report 6%</div>
         </div>
         <div class="info-box">
           <div class="label">Deliverable</div>
-          <div class="value">Proposal Document</div>
+          <div class="value">Presentation + Report</div>
         </div>
         <div class="info-box">
           <div class="label">Status</div>
@@ -91,21 +90,24 @@
       </div>
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
-      <!-- TODO: Replace with actual proposal description -->
       <p style="margin-bottom:1rem;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The project proposal outlines the research problem, objectives, methodology, and expected outcomes.
+        The project proposal formally establishes the research scope for SnoutScan — a non-invasive, AI-powered
+        biometric and welfare platform for dogs. It defines the research problem, outlines the four specific
+        objectives (nose-print identification, lost-pet recovery, ethical breeding recommendation, and cruelty
+        detection), and presents a high-level system architecture and initial literature review.
       </p>
       <p style="margin-bottom:1.5rem;">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+        The proposal also maps each sub-objective to a team member, justifies the technology stack (Flutter,
+        React/TypeScript, Node.js/Express, Python/FastAPI, PostgreSQL), and establishes the project timeline
+        across the 2025/26 academic year under the supervision of Prof. Dasuni Nawinna.
       </p>
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
       <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
-        <!-- TODO: Replace with actual criteria -->
-        <li>Clarity and relevance of the research problem</li>
-        <li>Feasibility of the proposed methodology</li>
-        <li>Quality and depth of literature review</li>
-        <li>Realistic timeline and resource planning</li>
+        <li>Clarity and relevance of the research problem statement</li>
+        <li>Feasibility and novelty of the proposed solution</li>
+        <li>Quality and depth of the initial literature review</li>
+        <li>Realistic timeline, resource planning, and team allocation</li>
       </ul>
 
       <div style="margin-top:1.5rem;">
@@ -128,11 +130,12 @@
       <div class="milestone-info-grid">
         <div class="info-box">
           <div class="label">Presentation Date</div>
-          <div class="value">DD Month YYYY</div>
+          <div class="value">07 January 2026</div>
         </div>
         <div class="info-box">
           <div class="label">Marks Allocated</div>
-          <div class="value">XX%</div>
+          <div class="value">15%</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:0.2rem;">50% of system completion</div>
         </div>
         <div class="info-box">
           <div class="label">Deliverable</div>
@@ -146,18 +149,23 @@
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
       <p style="margin-bottom:1rem;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. The first progress presentation demonstrates the initial implementation and early findings of the research, including a working prototype or proof of concept.
+        Progress Presentation 1 demonstrates the foundational components of SnoutScan developed during the first
+        phase of implementation. This includes the database schema design, initial Flutter mobile app screens,
+        the nose-print image acquisition and preprocessing pipeline, and early model training results for the
+        biometric identification component.
       </p>
       <p style="margin-bottom:1.5rem;">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        The presentation also covers the RESTful API skeleton, PostgreSQL integration, and initial findings from
+        the literature review and user survey. Each team member presents the progress on their individual
+        sub-objective and outlines the roadmap to PP2.
       </p>
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
       <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
         <li>Progress against the original proposal timeline</li>
-        <li>Quality of initial implementation or prototype</li>
-        <li>Presentation clarity and delivery</li>
-        <li>Ability to respond to panel questions</li>
+        <li>Quality of initial implementation and early ML model results</li>
+        <li>Presentation clarity and individual delivery</li>
+        <li>Ability to respond to panel questions on technical decisions</li>
       </ul>
 
       <div style="margin-top:1.5rem;">
@@ -172,7 +180,7 @@
           <h2 style="color:var(--navy); margin-bottom:0.5rem;">Progress Presentation 2</h2>
           <div class="milestone-meta">
             <span class="badge badge-blue">Assessment 3</span>
-            <span class="badge badge-amber">Upcoming</span>
+            <span class="badge badge-green">Completed</span>
           </div>
         </div>
       </div>
@@ -180,11 +188,12 @@
       <div class="milestone-info-grid">
         <div class="info-box">
           <div class="label">Presentation Date</div>
-          <div class="value">DD Month YYYY</div>
+          <div class="value">10 March 2026</div>
         </div>
         <div class="info-box">
           <div class="label">Marks Allocated</div>
-          <div class="value">XX%</div>
+          <div class="value">18%</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:0.2rem;">90% of system completion</div>
         </div>
         <div class="info-box">
           <div class="label">Deliverable</div>
@@ -192,25 +201,34 @@
         </div>
         <div class="info-box">
           <div class="label">Status</div>
-          <div class="value" style="color:#92400e;">Upcoming</div>
+          <div class="value" style="color:#065f46;">Completed</div>
         </div>
       </div>
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
       <p style="margin-bottom:1rem;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Progress Presentation 2 showcases a significantly more complete system, addressing feedback from PP1 and demonstrating key functionality of the research solution.
+        Progress Presentation 2 showcases a significantly more complete end-to-end system. Deliverables include a
+        working nose-print registration and verification flow integrated with the Flutter app, a functional
+        geolocation-based lost-pet alert system, an initial version of the breeding recommendation engine, and
+        early results from the cruelty detection model trained on veterinary-verified datasets.
       </p>
       <p style="margin-bottom:1.5rem;">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nulla pariatur.
+        The presentation addresses feedback received at PP1 and demonstrates quantitative model evaluation results
+        (accuracy, AUC, MAE) for each AI component. Integration testing outcomes and usability testing feedback
+        from initial user sessions are also presented.
       </p>
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
       <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
         <li>Completeness of the system relative to the final goal</li>
-        <li>Quality of evaluation and results so far</li>
-        <li>Response to PP1 panel feedback</li>
-        <li>Presentation quality and technical depth</li>
+        <li>Quality of evaluation results and model performance metrics</li>
+        <li>Demonstrated response to PP1 panel feedback</li>
+        <li>Presentation quality and technical depth of live demo</li>
       </ul>
+
+      <div style="margin-top:1.5rem;">
+        <a href="presentations.html" class="btn btn-outline">View Slides</a>
+      </div>
     </div>
 
     <!-- ===== FINAL ASSESSMENT ===== -->
@@ -228,15 +246,16 @@
       <div class="milestone-info-grid">
         <div class="info-box">
           <div class="label">Submission Date</div>
-          <div class="value">DD Month YYYY</div>
+          <div class="value">30 April 2026</div>
         </div>
         <div class="info-box">
           <div class="label">Marks Allocated</div>
-          <div class="value">XX%</div>
+          <div class="value">43%</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:0.2rem;">Final Report 15% · Group Report 4% · Presentation 10% · Research Paper 10% · Checklists 2% · Logbook 2%</div>
         </div>
         <div class="info-box">
           <div class="label">Deliverable</div>
-          <div class="value">Final Report + System</div>
+          <div class="value">Report + Paper + System</div>
         </div>
         <div class="info-box">
           <div class="label">Status</div>
@@ -246,18 +265,24 @@
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
       <p style="margin-bottom:1rem;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. The final assessment is the culmination of the research project — a complete system submission along with the final research report covering all components, results, and conclusions.
+        The final assessment is the culmination of the SnoutScan research project. It requires submission of the
+        complete, production-ready system alongside a comprehensive research report. The report covers all four
+        components — biometric identification, lost-pet recovery, breeding recommendation, and cruelty detection —
+        with full methodology, model evaluation, results analysis, and conclusions.
       </p>
       <p style="margin-bottom:1.5rem;">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa officia.
+        The system submission includes the deployed Flutter mobile application, React back-office portal,
+        Node.js/Express and FastAPI backend services, trained AI/ML models, and a live PostgreSQL-backed
+        database environment. All components must pass integration testing and meet the stated non-functional
+        requirements (privacy, scalability, accuracy targets).
       </p>
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
       <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
-        <li>Completeness and quality of the final system</li>
-        <li>Research report quality and academic rigor</li>
-        <li>Achievement of stated research objectives</li>
-        <li>Validity of results and analysis</li>
+        <li>Completeness and production-readiness of the full system</li>
+        <li>Research report quality, academic rigour, and depth of analysis</li>
+        <li>Achievement of the four stated research objectives and accuracy targets</li>
+        <li>Validity, reproducibility, and clarity of results and conclusions</li>
       </ul>
 
       <div style="margin-top:1.5rem;">
@@ -280,11 +305,11 @@
       <div class="milestone-info-grid">
         <div class="info-box">
           <div class="label">Viva Date</div>
-          <div class="value">DD Month YYYY</div>
+          <div class="value">15 May 2026</div>
         </div>
         <div class="info-box">
           <div class="label">Marks Allocated</div>
-          <div class="value">XX%</div>
+          <div class="value">10%</div>
         </div>
         <div class="info-box">
           <div class="label">Format</div>
@@ -298,31 +323,35 @@
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Description</h3>
       <p style="margin-bottom:1rem;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. The viva is an oral examination where each group member is assessed individually on their understanding, contribution, and ability to defend the research.
+        The viva is an individual oral examination where each group member defends their specific sub-objective
+        before an academic panel. Members are assessed on their depth of understanding, the technical and
+        research decisions they made, and their individual contribution to the overall SnoutScan platform.
       </p>
       <p style="margin-bottom:1.5rem;">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.
+        Each member is expected to explain their AI/ML model choices, justify architectural decisions, discuss
+        experimental results, and articulate how their component integrates into the unified welfare platform.
+        The panel may probe any aspect of the research, implementation, or evaluation.
       </p>
 
       <h3 style="color:var(--navy); margin-bottom:0.75rem;">Evaluation Criteria</h3>
       <ul style="margin-left:1.5rem; display:flex; flex-direction:column; gap:0.4rem; color:var(--text-muted); font-size:0.9rem;">
-        <li>Individual understanding of the research topic</li>
-        <li>Ability to defend design and implementation decisions</li>
-        <li>Clarity of answers to panel questions</li>
-        <li>Demonstrated individual contribution to the project</li>
+        <li>Individual depth of understanding of the research topic and their component</li>
+        <li>Ability to defend design, architecture, and implementation decisions</li>
+        <li>Clarity and accuracy of answers to panel questions</li>
+        <li>Demonstrated individual contribution to the overall project</li>
       </ul>
     </div>
 
   </div>
 
   <footer>
-    <p>Group [XX] &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2024/25</p>
+    <p>Group 25-26J-459 &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2025/26</p>
     <p style="margin-top:0.4rem;"><a href="contact.html">Contact Us</a></p>
   </footer>
 
   <script>
-    const select   = document.getElementById('milestoneSelect');
-    const details  = document.querySelectorAll('.milestone-detail');
+    const select  = document.getElementById('milestoneSelect');
+    const details = document.querySelectorAll('.milestone-detail');
 
     function showMilestone(id) {
       details.forEach(d => d.classList.remove('active'));
@@ -331,14 +360,12 @@
       select.value = id;
     }
 
-    // Read ?m= query param on load
-    const params = new URLSearchParams(window.location.search);
+    const params  = new URLSearchParams(window.location.search);
     const initial = params.get('m') || 'proposal';
     showMilestone(initial);
 
     select.addEventListener('change', () => showMilestone(select.value));
 
-    // Mobile nav
     document.getElementById('hamburger').addEventListener('click', () => {
       document.getElementById('navLinks').classList.toggle('open');
     });

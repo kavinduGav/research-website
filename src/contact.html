@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research Project | Contact Us</title>
+  <title>SnoutScan | Contact Us</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <a class="nav-logo" href="index.html">Research<span>.</span>24</a>
+      <a class="nav-logo" href="index.html"><img src="assets/icon.png" alt="SnoutScan" style="height:28px; vertical-align:middle; margin-right:0.4rem;" />Snout<span>Scan</span></a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -63,9 +63,8 @@
         <div class="contact-item">
           <div class="contact-item-icon">✉️</div>
           <div class="contact-item-text">
-            <p class="ci-label">Group Email</p>
-            <!-- TODO: Replace with your group email or group leader email -->
-            <p class="ci-value">groupXX@students.sliit.lk</p>
+            <p class="ci-label">Group Leader Email</p>
+            <p class="ci-value">it22071248@my.sliit.lk</p>
           </div>
         </div>
 
@@ -73,8 +72,7 @@
           <div class="contact-item-icon">👤</div>
           <div class="contact-item-text">
             <p class="ci-label">Group Leader</p>
-            <!-- TODO: Fill in group leader name and email -->
-            <p class="ci-value">Full Name<br>leader@students.sliit.lk</p>
+            <p class="ci-value">M S M Peiris<br>it22071248@my.sliit.lk</p>
           </div>
         </div>
 
@@ -82,8 +80,15 @@
           <div class="contact-item-icon">🎓</div>
           <div class="contact-item-text">
             <p class="ci-label">Supervisor</p>
-            <!-- TODO: Fill in supervisor name and email -->
-            <p class="ci-value">Dr. / Mr. Full Name<br>supervisor@sliit.lk</p>
+            <p class="ci-value">Prof. Dasuni Nawinna<br>dasuni.n@sliit.lk</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">🎓</div>
+          <div class="contact-item-text">
+            <p class="ci-label">Co-Supervisor</p>
+            <p class="ci-value">Mr. Jeewaka Perera<br>jeewaka.p@sliit.lk</p>
           </div>
         </div>
 
@@ -98,59 +103,54 @@
       <div class="contact-form-card">
         <h3>Send a Message</h3>
 
-        <!--
-          This form uses the mailto: action — it opens the user's default email client.
-          To handle form submissions properly on Amplify, swap the action for a
-          service like Formspree (https://formspree.io) or AWS SES later.
-          Example: action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
-        -->
-        <form id="contactForm" novalidate>
+        <form id="contactForm" action="https://formspree.io/f/myklvryq" method="POST" novalidate>
+
+          <!-- Formspree hidden fields -->
+          <input type="hidden" name="_subject" value="New Message — SnoutScan Research Website" />
+
+          <!-- Success / error messages at top -->
+          <div id="formSuccess" style="display:none; margin-bottom:1.25rem; background:#d1fae5; color:#065f46; border-radius:8px; padding:1rem; font-size:0.9rem; font-weight:500;">
+            Message sent successfully! We'll get back to you within 1–2 working days.
+          </div>
+          <div id="formError" style="display:none; margin-bottom:1.25rem; background:#fee2e2; color:#991b1b; border-radius:8px; padding:1rem; font-size:0.9rem; font-weight:500;">
+            Please fill in all required fields.
+          </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">First Name <span style="color:red;">*</span></label>
-              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              <input type="text" id="firstName" name="First Name" placeholder="John" required />
             </div>
             <div class="form-group">
               <label for="lastName">Last Name <span style="color:red;">*</span></label>
-              <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              <input type="text" id="lastName" name="Last Name" placeholder="Doe" required />
             </div>
           </div>
 
           <div class="form-group">
             <label for="email">Email Address <span style="color:red;">*</span></label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <input type="email" id="email" name="Email" placeholder="you@example.com" required />
           </div>
 
           <div class="form-group">
             <label for="subject">Subject</label>
-            <select id="subject" name="subject">
+            <select id="subject" name="Subject">
               <option value="">Select a subject</option>
-              <option value="general">General Inquiry</option>
-              <option value="research">Research Collaboration</option>
-              <option value="document">Document Request</option>
-              <option value="other">Other</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Research Collaboration">Research Collaboration</option>
+              <option value="Document Request">Document Request</option>
+              <option value="Other">Other</option>
             </select>
           </div>
 
           <div class="form-group">
             <label for="message">Message <span style="color:red;">*</span></label>
-            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            <textarea id="message" name="Message" placeholder="Write your message here..." required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:0.75rem;">
             Send Message
           </button>
-
-          <!-- Success message (hidden by default) -->
-          <div id="formSuccess" style="display:none; margin-top:1rem; background:#d1fae5; color:#065f46; border-radius:8px; padding:1rem; font-size:0.9rem; font-weight:500;">
-            Thanks for your message! We'll get back to you soon.
-          </div>
-
-          <!-- Error message (hidden by default) -->
-          <div id="formError" style="display:none; margin-top:1rem; background:#fee2e2; color:#991b1b; border-radius:8px; padding:1rem; font-size:0.9rem; font-weight:500;">
-            Please fill in all required fields.
-          </div>
 
         </form>
       </div>
@@ -162,33 +162,32 @@
       <div class="section-title"><h2>Team Contacts</h2></div>
       <div class="card-grid card-grid-4">
 
-        <!-- TODO: Replace with actual member details -->
         <div class="card text-center">
-          <div style="font-size:1.5rem; margin-bottom:0.5rem;">👤</div>
-          <h4 style="color:var(--navy); margin-bottom:0.25rem;">Full Name</h4>
+          <img src="assets/student-images/it22071248.jpeg" alt="M S M Peiris" style="width:70px; height:70px; border-radius:50%; object-fit:cover; margin:0 auto 0.75rem;" />
+          <h4 style="color:var(--navy); margin-bottom:0.25rem;">M S M Peiris</h4>
           <p style="font-size:0.82rem; color:var(--accent); font-weight:600; margin-bottom:0.5rem;">Group Leader</p>
-          <a href="mailto:member1@sliit.lk" style="font-size:0.82rem;">member1@sliit.lk</a>
+          <a href="mailto:it22071248@my.sliit.lk" style="font-size:0.82rem;">it22071248@my.sliit.lk</a>
         </div>
 
         <div class="card text-center">
-          <div style="font-size:1.5rem; margin-bottom:0.5rem;">👤</div>
-          <h4 style="color:var(--navy); margin-bottom:0.25rem;">Full Name</h4>
+          <img src="assets/student-images/IT22052292.jpeg" alt="W A K G WellappuliArachchi" style="width:70px; height:70px; border-radius:50%; object-fit:cover; margin:0 auto 0.75rem;" />
+          <h4 style="color:var(--navy); margin-bottom:0.25rem; font-size:0.9rem;">W A K G WellappuliArachchi</h4>
           <p style="font-size:0.82rem; color:var(--accent); font-weight:600; margin-bottom:0.5rem;">Member</p>
-          <a href="mailto:member2@sliit.lk" style="font-size:0.82rem;">member2@sliit.lk</a>
+          <a href="mailto:it22052292@my.sliit.lk" style="font-size:0.82rem;">it22052292@my.sliit.lk</a>
         </div>
 
         <div class="card text-center">
-          <div style="font-size:1.5rem; margin-bottom:0.5rem;">👤</div>
-          <h4 style="color:var(--navy); margin-bottom:0.25rem;">Full Name</h4>
+          <img src="assets/student-images/it22366122.jpeg" alt="T C Siriwardana" style="width:70px; height:70px; border-radius:50%; object-fit:cover; margin:0 auto 0.75rem;" />
+          <h4 style="color:var(--navy); margin-bottom:0.25rem;">T C Siriwardana</h4>
           <p style="font-size:0.82rem; color:var(--accent); font-weight:600; margin-bottom:0.5rem;">Member</p>
-          <a href="mailto:member3@sliit.lk" style="font-size:0.82rem;">member3@sliit.lk</a>
+          <a href="mailto:it22366122@my.sliit.lk" style="font-size:0.82rem;">it22366122@my.sliit.lk</a>
         </div>
 
         <div class="card text-center">
-          <div style="font-size:1.5rem; margin-bottom:0.5rem;">👤</div>
-          <h4 style="color:var(--navy); margin-bottom:0.25rem;">Full Name</h4>
+          <img src="assets/student-images/it22071866.jpg" alt="J K D H Perera" style="width:70px; height:70px; border-radius:50%; object-fit:cover; margin:0 auto 0.75rem;" />
+          <h4 style="color:var(--navy); margin-bottom:0.25rem;">J K D H Perera</h4>
           <p style="font-size:0.82rem; color:var(--accent); font-weight:600; margin-bottom:0.5rem;">Member</p>
-          <a href="mailto:member4@sliit.lk" style="font-size:0.82rem;">member4@sliit.lk</a>
+          <a href="mailto:it22071866@my.sliit.lk" style="font-size:0.82rem;">it22071866@my.sliit.lk</a>
         </div>
 
       </div>
@@ -197,34 +196,57 @@
   </div>
 
   <footer>
-    <p>Group [XX] &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2024/25</p>
+    <p>Group 25-26J-459 &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2025/26</p>
     <p style="margin-top:0.4rem;"><a href="contact.html">Contact Us</a></p>
   </footer>
 
   <script>
-    // Basic client-side form validation
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
 
       const firstName = document.getElementById('firstName').value.trim();
       const email     = document.getElementById('email').value.trim();
       const message   = document.getElementById('message').value.trim();
 
-      const success = document.getElementById('formSuccess');
-      const error   = document.getElementById('formError');
+      const success   = document.getElementById('formSuccess');
+      const error     = document.getElementById('formError');
+      const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
       if (!firstName || !email || !message) {
+        error.textContent     = 'Please fill in all required fields.';
+        error.style.display   = 'block';
+        success.style.display = 'none';
+        return;
+      }
+
+      if (!emailValid) {
+        error.textContent     = 'Please enter a valid email address.';
         error.style.display   = 'block';
         success.style.display = 'none';
         return;
       }
 
       error.style.display   = 'none';
-      success.style.display = 'block';
-      this.reset();
+      success.style.display = 'none';
 
-      // When you wire up Formspree or a real backend, remove the above
-      // and use fetch() to POST the form data instead.
+      try {
+        const response = await fetch('https://formspree.io/f/myklvryq', {
+          method: 'POST',
+          body: new FormData(this),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          success.style.display = 'block';
+          this.reset();
+        } else {
+          error.textContent   = 'Something went wrong. Please try again or email us directly.';
+          error.style.display = 'block';
+        }
+      } catch {
+        error.textContent   = 'Network error. Please check your connection and try again.';
+        error.style.display = 'block';
+      }
     });
 
     // Mobile nav

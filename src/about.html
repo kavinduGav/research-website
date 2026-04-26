@@ -13,7 +13,7 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <a class="nav-logo" href="index.html">Research<span>.</span>24</a>
+      <a class="nav-logo" href="index.html"><img src="assets/icon.png" alt="SnoutScan" style="height:28px; vertical-align:middle; margin-right:0.4rem;" />Snout<span>Scan</span></a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -45,25 +45,27 @@
 
   <div class="section">
 
-    <!-- Supervisor -->
-    <div class="supervisor-section">
-      <h2>Supervisor</h2>
-      <!-- TODO: Replace with your actual supervisor details -->
-      <div style="display:flex; flex-direction:column; align-items:center; gap:0.4rem;">
-        <p class="supervisor-name">Dr. / Mr. / Ms. Full Name</p>
-        <p class="supervisor-title">Senior Lecturer, Department of [Department Name]</p>
-        <p class="supervisor-title">Faculty of Computing, SLIIT</p>
-        <a href="mailto:supervisor@sliit.lk" style="color:rgba(255,255,255,0.7); font-size:0.875rem; margin-top:0.25rem;">supervisor@sliit.lk</a>
-      </div>
-    </div>
+    <!-- Supervisors -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; margin-bottom:3rem;">
 
-    <!-- Co-Supervisor (optional — remove this block if not applicable) -->
-    <div style="background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow); padding:2rem; text-align:center; margin-bottom:3rem;">
-      <p style="font-size:0.78rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Co-Supervisor</p>
-      <!-- TODO: Replace or remove this section -->
-      <p style="font-weight:700; font-size:1.1rem; color:var(--navy);">Dr. / Mr. / Ms. Full Name</p>
-      <p style="color:var(--text-muted); font-size:0.9rem;">Senior Lecturer, Department of [Department Name]</p>
-      <a href="mailto:cosupervisor@sliit.lk" style="font-size:0.875rem;">cosupervisor@sliit.lk</a>
+      <div class="supervisor-section" style="display:flex; flex-direction:column; align-items:center; gap:0.75rem;">
+        <img src="assets/supervisor-images/dasunin.jpg" alt="Prof. Dasuni Nawinna" style="width:100px; height:100px; border-radius:50%; object-fit:cover; border:3px solid rgba(255,255,255,0.4); margin-bottom:0.25rem;" />
+        <p style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; opacity:0.75;">Supervisor</p>
+        <p class="supervisor-name">Prof. Dasuni Nawinna</p>
+        <p class="supervisor-title">Professor | Department of Computer Systems Engineering</p>
+        <p class="supervisor-title">Faculty of Computing, SLIIT</p>
+        <a href="mailto:dasuni.n@sliit.lk" style="color:rgba(255,255,255,0.75); font-size:0.875rem; margin-top:0.1rem;">dasuni.n@sliit.lk</a>
+      </div>
+
+      <div class="supervisor-section" style="display:flex; flex-direction:column; align-items:center; gap:0.75rem;">
+        <img src="assets/supervisor-images/jeewakap.jpeg" alt="Mr. Jeewaka Perera" style="width:100px; height:100px; border-radius:50%; object-fit:cover; border:3px solid rgba(255,255,255,0.4); margin-bottom:0.25rem;" />
+        <p style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; opacity:0.75;">Co-Supervisor</p>
+        <p class="supervisor-name">Mr. Jeewaka Perera</p>
+        <p class="supervisor-title">Senior Lecturer | Department of Computer Science</p>
+        <p class="supervisor-title">Faculty of Computing, SLIIT</p>
+        <a href="mailto:jeewaka.p@sliit.lk" style="color:rgba(255,255,255,0.75); font-size:0.875rem; margin-top:0.1rem;">jeewaka.p@sliit.lk</a>
+      </div>
+
     </div>
 
     <!-- Team Members -->
@@ -71,42 +73,40 @@
 
     <div class="card-grid card-grid-4">
 
-      <!-- Member 1 -->
       <div class="member-card">
-        <!-- TODO: Replace initials with <img src="assets/images/member1.jpg"> when photo is ready -->
-        <div class="member-avatar">KG</div>
-        <!-- TODO: Fill in actual details -->
-        <h3>Full Name</h3>
+        <img src="assets/student-images/it22071248.jpeg" alt="M S M Peiris" class="member-avatar" style="width:80px; height:80px; border-radius:50%; object-fit:cover;" />
+        <h3>M S M Peiris</h3>
         <p class="role">Group Leader</p>
-        <p class="member-id">IT21XXXXXX</p>
-        <a class="email" href="mailto:member1@students.nsbm.ac.lk">member1@sliit.lk</a>
+        <p class="member-id">IT22071248</p>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.2rem;">Lost &amp; Found Recovery</p>
+        <a class="email" href="mailto:it22071248@my.sliit.lk">it22071248@my.sliit.lk</a>
       </div>
 
-      <!-- Member 2 -->
       <div class="member-card">
-        <div class="member-avatar">AB</div>
-        <h3>Full Name</h3>
+        <img src="assets/student-images/IT22052292.jpeg" alt="W A K G WellappuliArachchi" class="member-avatar" style="width:80px; height:80px; border-radius:50%; object-fit:cover;" />
+        <h3 style="font-size:0.9rem;">W A K G WellappuliArachchi</h3>
         <p class="role">Member</p>
-        <p class="member-id">IT21XXXXXX</p>
-        <a class="email" href="mailto:member2@sliit.lk">member2@sliit.lk</a>
+        <p class="member-id">IT22052292</p>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.2rem;">Biometric Identification</p>
+        <a class="email" href="mailto:it22052292@my.sliit.lk">it22052292@my.sliit.lk</a>
       </div>
 
-      <!-- Member 3 -->
       <div class="member-card">
-        <div class="member-avatar">CD</div>
-        <h3>Full Name</h3>
+        <img src="assets/student-images/it22366122.jpeg" alt="T C Siriwardana" class="member-avatar" style="width:80px; height:80px; border-radius:50%; object-fit:cover;" />
+        <h3>T C Siriwardana</h3>
         <p class="role">Member</p>
-        <p class="member-id">IT21XXXXXX</p>
-        <a class="email" href="mailto:member3@sliit.lk">member3@sliit.lk</a>
+        <p class="member-id">IT22366122</p>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.2rem;">Breeding Recommendation</p>
+        <a class="email" href="mailto:it22366122@my.sliit.lk">it22366122@my.sliit.lk</a>
       </div>
 
-      <!-- Member 4 -->
       <div class="member-card">
-        <div class="member-avatar">EF</div>
-        <h3>Full Name</h3>
+        <img src="assets/student-images/it22071866.jpg" alt="J K D H Perera" class="member-avatar" style="width:80px; height:80px; border-radius:50%; object-fit:cover;" />
+        <h3>J K D H Perera</h3>
         <p class="role">Member</p>
-        <p class="member-id">IT21XXXXXX</p>
-        <a class="email" href="mailto:member4@sliit.lk">member4@sliit.lk</a>
+        <p class="member-id">IT22071866</p>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.2rem;">Cruelty Detection</p>
+        <a class="email" href="mailto:it22071866@my.sliit.lk">it22071866@my.sliit.lk</a>
       </div>
 
     </div>
@@ -114,19 +114,23 @@
     <!-- About the project blurb -->
     <div class="card" style="max-width:800px; margin:3rem auto 0;">
       <h3 style="color:var(--navy); margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:2px solid var(--border);">About This Project</h3>
-      <!-- TODO: Replace with your actual project background -->
       <p style="margin-bottom:1rem;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This research project is conducted as part of the Final Year Research Project module at the Faculty of Computing, SLIIT.
+        SnoutScan is a final-year research project conducted as part of the IT4010 Research Project module at the
+        Faculty of Computing, SLIIT (Academic Year 2025/26). The project is carried out under the supervision of
+        Prof. Dasuni Nawinna and Mr. Jeewaka Perera.
       </p>
       <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Our team is passionate about [your research area] and aims to deliver a meaningful contribution to the field.
+        The team of four developed an AI-powered, non-invasive biometric platform for dog identification and
+        welfare management. Each member owns one of the four core components — biometric nose-print identification,
+        lost and found recovery, ethical breeding recommendation, and community cruelty detection — contributing
+        to a unified, privacy-preserving, and scalable canine welfare ecosystem.
       </p>
     </div>
 
   </div>
 
   <footer>
-    <p>Group [XX] &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2024/25</p>
+    <p>Group 25-26J-459 &mdash; Faculty of Computing | SLIIT &mdash; Academic Year 2025/26</p>
     <p style="margin-top:0.4rem;"><a href="contact.html">Contact Us</a></p>
   </footer>
 
