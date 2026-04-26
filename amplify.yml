@@ -1,0 +1,14 @@
+version: 1
+frontend:
+  phases:
+    # No build step needed — pure static HTML/CSS
+    build:
+      commands:
+        - echo "Static site — nothing to build"
+  artifacts:
+    # Amplify will serve everything from the root of the repo
+    baseDirectory: /
+    files:
+      - "**/*"
+  cache:
+    paths: []
